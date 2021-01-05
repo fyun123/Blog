@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    #   数据源基本配置
+    username: root
+    password: Fangyunfy123.
+    url: jdbc:mysql://121.4.89.166:3306/blog?serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+logging:
+  level:
+    root: warn
+    com.imcoding: debug
+server:
+  port: 80

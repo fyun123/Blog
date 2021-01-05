@@ -1,0 +1,11 @@
+spring:
+  profiles:
+    active: dev
+  thymeleaf:
+    cache: false
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true
+
+comment.avatar: /asserts/images/avatar.png

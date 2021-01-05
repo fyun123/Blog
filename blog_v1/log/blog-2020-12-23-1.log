@@ -1,0 +1,24 @@
+2020-12-23 19:01:29.690 [ restartedMain ] - [ INFO  ] [ com.whut.blog.BlogV1Application : 55 ] - Starting BlogV1Application using Java 14.0.1 on MSI with PID 20812 (E:\java_project\SpringBoot\blog_v1\target\classes started by MSI-PC in E:\java_project\SpringBoot\blog_v1)
+2020-12-23 19:01:29.690 [ restartedMain ] - [ DEBUG ] [ com.whut.blog.BlogV1Application : 56 ] - Running with Spring Boot v2.4.1, Spring v5.3.2
+2020-12-23 19:01:29.690 [ restartedMain ] - [ INFO  ] [ com.whut.blog.BlogV1Application : 664 ] - The following profiles are active: pro
+2020-12-23 19:01:29.831 [ restartedMain ] - [ WARN  ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 44 ] - No MyBatis mapper was found in '[com.whut.blog]' package. Please check your configuration.
+2020-12-23 19:01:30.580 [ restartedMain ] - [ INFO  ] [ com.whut.blog.BlogV1Application : 61 ] - Started BlogV1Application in 0.933 seconds (JVM running for 866.468)
+2020-12-23 19:01:35.277 [ restartedMain ] - [ INFO  ] [ com.whut.blog.BlogV1Application : 55 ] - Starting BlogV1Application using Java 14.0.1 on MSI with PID 20812 (E:\java_project\SpringBoot\blog_v1\target\classes started by MSI-PC in E:\java_project\SpringBoot\blog_v1)
+2020-12-23 19:01:35.277 [ restartedMain ] - [ DEBUG ] [ com.whut.blog.BlogV1Application : 56 ] - Running with Spring Boot v2.4.1, Spring v5.3.2
+2020-12-23 19:01:35.277 [ restartedMain ] - [ INFO  ] [ com.whut.blog.BlogV1Application : 664 ] - The following profiles are active: pro
+2020-12-23 19:01:35.675 [ restartedMain ] - [ WARN  ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 44 ] - No MyBatis mapper was found in '[com.whut.blog]' package. Please check your configuration.
+2020-12-23 19:01:37.755 [ restartedMain ] - [ INFO  ] [ com.whut.blog.BlogV1Application : 61 ] - Started BlogV1Application in 2.509 seconds (JVM running for 873.644)
+2020-12-23 19:03:55.513 [ restartedMain ] - [ INFO  ] [ com.whut.blog.BlogV1Application : 55 ] - Starting BlogV1Application using Java 14.0.1 on MSI with PID 20812 (E:\java_project\SpringBoot\blog_v1\target\classes started by MSI-PC in E:\java_project\SpringBoot\blog_v1)
+2020-12-23 19:03:55.513 [ restartedMain ] - [ DEBUG ] [ com.whut.blog.BlogV1Application : 56 ] - Running with Spring Boot v2.4.1, Spring v5.3.2
+2020-12-23 19:03:55.513 [ restartedMain ] - [ INFO  ] [ com.whut.blog.BlogV1Application : 664 ] - The following profiles are active: pro
+2020-12-23 19:03:55.702 [ restartedMain ] - [ WARN  ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 44 ] - No MyBatis mapper was found in '[com.whut.blog]' package. Please check your configuration.
+2020-12-23 19:03:56.429 [ restartedMain ] - [ INFO  ] [ com.whut.blog.BlogV1Application : 61 ] - Started BlogV1Application in 0.946 seconds (JVM running for 1012.318)
+2020-12-23 19:03:57.948 [ restartedMain ] - [ INFO  ] [ com.whut.blog.BlogV1Application : 55 ] - Starting BlogV1Application using Java 14.0.1 on MSI with PID 20812 (E:\java_project\SpringBoot\blog_v1\target\classes started by MSI-PC in E:\java_project\SpringBoot\blog_v1)
+2020-12-23 19:03:57.948 [ restartedMain ] - [ DEBUG ] [ com.whut.blog.BlogV1Application : 56 ] - Running with Spring Boot v2.4.1, Spring v5.3.2
+2020-12-23 19:03:57.948 [ restartedMain ] - [ INFO  ] [ com.whut.blog.BlogV1Application : 664 ] - The following profiles are active: pro
+2020-12-23 19:03:58.137 [ restartedMain ] - [ WARN  ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 44 ] - No MyBatis mapper was found in '[com.whut.blog]' package. Please check your configuration.
+2020-12-23 19:04:00.116 [ restartedMain ] - [ INFO  ] [ com.whut.blog.BlogV1Application : 61 ] - Started BlogV1Application in 2.186 seconds (JVM running for 1016.005)
+2020-12-23 19:55:42.615 [ restartedMain ] - [ INFO  ] [ com.whut.blog.BlogV1Application : 55 ] - Starting BlogV1Application using Java 14.0.1 on MSI with PID 2260 (E:\java_project\SpringBoot\blog_v1\target\classes started by MSI-PC in E:\java_project\SpringBoot\blog_v1)
+2020-12-23 19:55:42.618 [ restartedMain ] - [ DEBUG ] [ com.whut.blog.BlogV1Application : 56 ] - Running with Spring Boot v2.4.1, Spring v5.3.2
+2020-12-23 19:55:42.618 [ restartedMain ] - [ INFO  ] [ com.whut.blog.BlogV1Application : 664 ] - The following profiles are active: pro
+2020-12-23 19:55:43.595 [ restartedMain ] - [ WARN  ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 44 ] - No MyBatis mapper was found in '[com.whut.blog]' package. Please check your configuration.

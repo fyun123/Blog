@@ -1,0 +1,147 @@
+2020-12-23 18:47:09.193 [ restartedMain ] - [ INFO  ] [ com.whut.blog.BlogV1Application : 55 ] - Starting BlogV1Application using Java 14.0.1 on MSI with PID 20812 (E:\java_project\SpringBoot\blog_v1\target\classes started by MSI-PC in E:\java_project\SpringBoot\blog_v1)
+2020-12-23 18:47:09.197 [ restartedMain ] - [ DEBUG ] [ com.whut.blog.BlogV1Application : 56 ] - Running with Spring Boot v2.4.1, Spring v5.3.2
+2020-12-23 18:47:09.197 [ restartedMain ] - [ INFO  ] [ com.whut.blog.BlogV1Application : 664 ] - The following profiles are active: dev
+2020-12-23 18:47:09.201 [ background-preinit ] - [ INFO  ] [ org.hibernate.validator.internal.util.Version : 21 ] - HV000001: Hibernate Validator 6.1.7.Final
+2020-12-23 18:47:12.359 [ restartedMain ] - [ WARN  ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 44 ] - No MyBatis mapper was found in '[com.whut.blog]' package. Please check your configuration.
+2020-12-23 18:47:13.683 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+2020-12-23 18:47:13.683 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2020-12-23 18:47:13.683 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2020-12-23 18:47:13.801 [ restartedMain ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring embedded WebApplicationContext
+2020-12-23 18:47:14.269 [ restartedMain ] - [ INFO  ] [ org.hibernate.jpa.internal.util.LogHelper : 31 ] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-12-23 18:47:14.597 [ restartedMain ] - [ INFO  ] [ org.hibernate.Version : 44 ] - HHH000412: Hibernate ORM core version 5.4.25.Final
+2020-12-23 18:47:14.870 [ restartedMain ] - [ INFO  ] [ org.hibernate.annotations.common.Version : 56 ] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2020-12-23 18:47:15.066 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 110 ] - HikariPool-1 - Starting...
+2020-12-23 18:47:16.482 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 123 ] - HikariPool-1 - Start completed.
+2020-12-23 18:47:16.501 [ restartedMain ] - [ INFO  ] [ org.hibernate.dialect.Dialect : 175 ] - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-12-23 18:47:20.178 [ restartedMain ] - [ INFO  ] [ o.h.e.t.jta.platform.internal.JtaPlatformInitiator : 52 ] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-12-23 18:47:21.793 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8080"]
+2020-12-23 18:47:21.857 [ restartedMain ] - [ INFO  ] [ com.whut.blog.BlogV1Application : 61 ] - Started BlogV1Application in 14.07 seconds (JVM running for 17.746)
+2020-12-23 19:01:02.317 [ Thread-4 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 350 ] - HikariPool-1 - Shutdown initiated...
+2020-12-23 19:01:02.419 [ Thread-4 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 352 ] - HikariPool-1 - Shutdown completed.
+2020-12-23 20:18:09.161 [ restartedMain ] - [ INFO  ] [ com.whut.blog.BlogV1Application : 55 ] - Starting BlogV1Application using Java 14.0.1 on MSI with PID 15204 (E:\java_project\SpringBoot\blog_v1\target\classes started by MSI-PC in E:\java_project\SpringBoot\blog_v1)
+2020-12-23 20:18:09.162 [ background-preinit ] - [ INFO  ] [ org.hibernate.validator.internal.util.Version : 21 ] - HV000001: Hibernate Validator 6.1.7.Final
+2020-12-23 20:18:09.166 [ restartedMain ] - [ DEBUG ] [ com.whut.blog.BlogV1Application : 56 ] - Running with Spring Boot v2.4.1, Spring v5.3.2
+2020-12-23 20:18:09.167 [ restartedMain ] - [ INFO  ] [ com.whut.blog.BlogV1Application : 664 ] - The following profiles are active: dev
+2020-12-23 20:18:10.216 [ restartedMain ] - [ WARN  ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 44 ] - No MyBatis mapper was found in '[com.whut.blog]' package. Please check your configuration.
+2020-12-23 20:18:10.682 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+2020-12-23 20:18:10.682 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2020-12-23 20:18:10.682 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2020-12-23 20:18:10.737 [ restartedMain ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring embedded WebApplicationContext
+2020-12-23 20:18:10.850 [ restartedMain ] - [ INFO  ] [ org.hibernate.jpa.internal.util.LogHelper : 31 ] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-12-23 20:18:10.874 [ restartedMain ] - [ INFO  ] [ org.hibernate.Version : 44 ] - HHH000412: Hibernate ORM core version 5.4.25.Final
+2020-12-23 20:18:10.943 [ restartedMain ] - [ INFO  ] [ org.hibernate.annotations.common.Version : 56 ] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2020-12-23 20:18:11.011 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 110 ] - HikariPool-1 - Starting...
+2020-12-23 20:18:11.376 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 123 ] - HikariPool-1 - Start completed.
+2020-12-23 20:18:11.388 [ restartedMain ] - [ INFO  ] [ org.hibernate.dialect.Dialect : 175 ] - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-12-23 20:18:11.979 [ restartedMain ] - [ INFO  ] [ o.h.e.t.jta.platform.internal.JtaPlatformInitiator : 52 ] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-12-23 20:18:13.305 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8080"]
+2020-12-23 20:18:13.364 [ restartedMain ] - [ INFO  ] [ com.whut.blog.BlogV1Application : 61 ] - Started BlogV1Application in 4.551 seconds (JVM running for 5.121)
+2020-12-23 20:18:16.652 [ http-nio-8080-exec-1 ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-23 20:18:23.731 [ http-nio-8080-exec-3 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.newBlogs', args=[{}]}
+2020-12-23 20:18:23.932 [ http-nio-8080-exec-3 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : fragments :: newblogList
+2020-12-23 20:18:25.418 [ http-nio-8080-exec-1 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.newBlogs', args=[{}]}
+2020-12-23 20:18:25.431 [ http-nio-8080-exec-1 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : fragments :: newblogList
+2020-12-23 20:18:26.014 [ http-nio-8080-exec-7 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.newBlogs', args=[{}]}
+2020-12-23 20:18:26.030 [ http-nio-8080-exec-7 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : fragments :: newblogList
+2020-12-23 20:18:26.643 [ http-nio-8080-exec-5 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.newBlogs', args=[{}]}
+2020-12-23 20:18:26.653 [ http-nio-8080-exec-5 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : fragments :: newblogList
+2020-12-23 20:18:29.848 [ http-nio-8080-exec-4 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-12-23 20:18:29.868 [ http-nio-8080-exec-4 ] - [ WARN  ] [ org.hibernate.orm.deprecation : 670 ] - HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-12-23 20:18:29.872 [ http-nio-8080-exec-4 ] - [ WARN  ] [ org.hibernate.orm.deprecation : 670 ] - HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-12-23 20:18:29.982 [ http-nio-8080-exec-4 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : index
+2020-12-23 20:18:30.347 [ http-nio-8080-exec-1 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.newBlogs', args=[{}]}
+2020-12-23 20:18:30.356 [ http-nio-8080-exec-1 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : fragments :: newblogList
+2020-12-23 20:18:31.284 [ http-nio-8080-exec-8 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-12-23 20:18:31.296 [ http-nio-8080-exec-8 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : types
+2020-12-23 20:18:31.562 [ http-nio-8080-exec-9 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.newBlogs', args=[{}]}
+2020-12-23 20:18:31.570 [ http-nio-8080-exec-9 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : fragments :: newblogList
+2020-12-23 20:18:32.249 [ http-nio-8080-exec-6 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost:8080/tags/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.TagShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-12-23 20:18:32.269 [ http-nio-8080-exec-6 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : tags
+2020-12-23 20:18:32.502 [ http-nio-8080-exec-5 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.newBlogs', args=[{}]}
+2020-12-23 20:18:32.513 [ http-nio-8080-exec-5 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : fragments :: newblogList
+2020-12-23 20:18:32.952 [ http-nio-8080-exec-10 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost:8080/archives', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.ArchiveShowController.archives', args=[{}]}
+2020-12-23 20:18:33.019 [ http-nio-8080-exec-10 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : archives
+2020-12-23 20:18:33.237 [ http-nio-8080-exec-7 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.newBlogs', args=[{}]}
+2020-12-23 20:18:33.249 [ http-nio-8080-exec-7 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : fragments :: newblogList
+2020-12-23 20:18:33.619 [ http-nio-8080-exec-1 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost:8080/about', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.about', args=[]}
+2020-12-23 20:18:33.620 [ http-nio-8080-exec-1 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : about
+2020-12-23 20:18:33.849 [ http-nio-8080-exec-6 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.newBlogs', args=[{}]}
+2020-12-23 20:18:33.860 [ http-nio-8080-exec-6 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : fragments :: newblogList
+2020-12-23 20:18:34.280 [ http-nio-8080-exec-4 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost:8080/archives', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.ArchiveShowController.archives', args=[{}]}
+2020-12-23 20:18:34.340 [ http-nio-8080-exec-4 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : archives
+2020-12-23 20:18:34.570 [ http-nio-8080-exec-5 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.newBlogs', args=[{}]}
+2020-12-23 20:18:34.579 [ http-nio-8080-exec-5 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : fragments :: newblogList
+2020-12-23 20:18:34.753 [ http-nio-8080-exec-9 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost:8080/tags/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.TagShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-12-23 20:18:34.765 [ http-nio-8080-exec-9 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : tags
+2020-12-23 20:18:35.003 [ http-nio-8080-exec-2 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.newBlogs', args=[{}]}
+2020-12-23 20:18:35.013 [ http-nio-8080-exec-2 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : fragments :: newblogList
+2020-12-23 20:18:35.171 [ http-nio-8080-exec-1 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-12-23 20:18:35.180 [ http-nio-8080-exec-1 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : types
+2020-12-23 20:18:35.417 [ http-nio-8080-exec-10 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.newBlogs', args=[{}]}
+2020-12-23 20:18:35.427 [ http-nio-8080-exec-10 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : fragments :: newblogList
+2020-12-23 20:24:56.514 [ Thread-4 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 350 ] - HikariPool-1 - Shutdown initiated...
+2020-12-23 20:24:56.523 [ Thread-4 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 352 ] - HikariPool-1 - Shutdown completed.
+2020-12-23 20:24:56.593 [ restartedMain ] - [ INFO  ] [ com.whut.blog.BlogV1Application : 55 ] - Starting BlogV1Application using Java 14.0.1 on MSI with PID 15204 (E:\java_project\SpringBoot\blog_v1\target\classes started by MSI-PC in E:\java_project\SpringBoot\blog_v1)
+2020-12-23 20:24:56.594 [ restartedMain ] - [ DEBUG ] [ com.whut.blog.BlogV1Application : 56 ] - Running with Spring Boot v2.4.1, Spring v5.3.2
+2020-12-23 20:24:56.594 [ restartedMain ] - [ INFO  ] [ com.whut.blog.BlogV1Application : 664 ] - The following profiles are active: dev
+2020-12-23 20:24:56.830 [ restartedMain ] - [ WARN  ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 44 ] - No MyBatis mapper was found in '[com.whut.blog]' package. Please check your configuration.
+2020-12-23 20:24:56.935 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+2020-12-23 20:24:56.935 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2020-12-23 20:24:56.936 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2020-12-23 20:24:56.955 [ restartedMain ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring embedded WebApplicationContext
+2020-12-23 20:24:57.043 [ restartedMain ] - [ INFO  ] [ org.hibernate.jpa.internal.util.LogHelper : 31 ] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-12-23 20:24:57.048 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 110 ] - HikariPool-2 - Starting...
+2020-12-23 20:24:57.073 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 123 ] - HikariPool-2 - Start completed.
+2020-12-23 20:24:57.074 [ restartedMain ] - [ INFO  ] [ org.hibernate.dialect.Dialect : 175 ] - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-12-23 20:24:57.237 [ restartedMain ] - [ INFO  ] [ o.h.e.t.jta.platform.internal.JtaPlatformInitiator : 52 ] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-12-23 20:24:57.916 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8080"]
+2020-12-23 20:24:57.925 [ restartedMain ] - [ INFO  ] [ com.whut.blog.BlogV1Application : 61 ] - Started BlogV1Application in 1.361 seconds (JVM running for 409.681)
+2020-12-23 20:24:59.392 [ Thread-8 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 350 ] - HikariPool-2 - Shutdown initiated...
+2020-12-23 20:24:59.405 [ Thread-8 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 352 ] - HikariPool-2 - Shutdown completed.
+2020-12-23 20:24:59.474 [ restartedMain ] - [ INFO  ] [ com.whut.blog.BlogV1Application : 55 ] - Starting BlogV1Application using Java 14.0.1 on MSI with PID 15204 (E:\java_project\SpringBoot\blog_v1\target\classes started by MSI-PC in E:\java_project\SpringBoot\blog_v1)
+2020-12-23 20:24:59.475 [ restartedMain ] - [ DEBUG ] [ com.whut.blog.BlogV1Application : 56 ] - Running with Spring Boot v2.4.1, Spring v5.3.2
+2020-12-23 20:24:59.475 [ restartedMain ] - [ INFO  ] [ com.whut.blog.BlogV1Application : 664 ] - The following profiles are active: dev
+2020-12-23 20:24:59.713 [ restartedMain ] - [ WARN  ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 44 ] - No MyBatis mapper was found in '[com.whut.blog]' package. Please check your configuration.
+2020-12-23 20:24:59.834 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+2020-12-23 20:24:59.834 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2020-12-23 20:24:59.834 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2020-12-23 20:24:59.851 [ restartedMain ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring embedded WebApplicationContext
+2020-12-23 20:24:59.906 [ restartedMain ] - [ INFO  ] [ org.hibernate.jpa.internal.util.LogHelper : 31 ] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-12-23 20:24:59.910 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 110 ] - HikariPool-3 - Starting...
+2020-12-23 20:24:59.931 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 123 ] - HikariPool-3 - Start completed.
+2020-12-23 20:24:59.932 [ restartedMain ] - [ INFO  ] [ org.hibernate.dialect.Dialect : 175 ] - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-12-23 20:25:00.072 [ restartedMain ] - [ INFO  ] [ o.h.e.t.jta.platform.internal.JtaPlatformInitiator : 52 ] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-12-23 20:25:00.884 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8080"]
+2020-12-23 20:25:00.895 [ restartedMain ] - [ INFO  ] [ com.whut.blog.BlogV1Application : 61 ] - Started BlogV1Application in 1.448 seconds (JVM running for 412.652)
+2020-12-23 20:25:01.998 [ main ] - [ INFO  ] [ com.whut.blog.BlogV1ApplicationTests : 55 ] - Starting BlogV1ApplicationTests using Java 14.0.1 on MSI with PID 24988 (started by MSI-PC in E:\java_project\SpringBoot\blog_v1)
+2020-12-23 20:25:01.999 [ main ] - [ DEBUG ] [ com.whut.blog.BlogV1ApplicationTests : 56 ] - Running with Spring Boot v2.4.1, Spring v5.3.2
+2020-12-23 20:25:01.999 [ main ] - [ INFO  ] [ com.whut.blog.BlogV1ApplicationTests : 664 ] - The following profiles are active: dev
+2020-12-23 20:25:02.033 [ background-preinit ] - [ INFO  ] [ org.hibernate.validator.internal.util.Version : 21 ] - HV000001: Hibernate Validator 6.1.7.Final
+2020-12-23 20:25:02.924 [ main ] - [ WARN  ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 44 ] - No MyBatis mapper was found in '[com.whut.blog]' package. Please check your configuration.
+2020-12-23 20:25:03.716 [ main ] - [ INFO  ] [ org.hibernate.jpa.internal.util.LogHelper : 31 ] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-12-23 20:25:03.760 [ main ] - [ INFO  ] [ org.hibernate.Version : 44 ] - HHH000412: Hibernate ORM core version 5.4.25.Final
+2020-12-23 20:25:03.874 [ main ] - [ INFO  ] [ org.hibernate.annotations.common.Version : 56 ] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2020-12-23 20:25:04.005 [ main ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 110 ] - HikariPool-1 - Starting...
+2020-12-23 20:25:04.503 [ main ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 123 ] - HikariPool-1 - Start completed.
+2020-12-23 20:25:04.529 [ main ] - [ INFO  ] [ org.hibernate.dialect.Dialect : 175 ] - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-12-23 20:25:05.291 [ main ] - [ INFO  ] [ o.h.e.t.jta.platform.internal.JtaPlatformInitiator : 52 ] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-12-23 20:25:07.592 [ main ] - [ INFO  ] [ com.whut.blog.BlogV1ApplicationTests : 61 ] - Started BlogV1ApplicationTests in 6.102 seconds (JVM running for 7.05)
+2020-12-23 20:25:07.884 [ SpringContextShutdownHook ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 350 ] - HikariPool-1 - Shutdown initiated...
+2020-12-23 20:25:07.895 [ SpringContextShutdownHook ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 352 ] - HikariPool-1 - Shutdown completed.
+2020-12-23 20:27:31.233 [ main ] - [ INFO  ] [ com.whut.blog.BlogV1ApplicationTests : 55 ] - Starting BlogV1ApplicationTests using Java 14.0.1 on MSI with PID 8716 (started by MSI-PC in E:\java_project\SpringBoot\blog_v1)
+2020-12-23 20:27:31.234 [ main ] - [ DEBUG ] [ com.whut.blog.BlogV1ApplicationTests : 56 ] - Running with Spring Boot v2.4.1, Spring v5.3.2
+2020-12-23 20:27:31.234 [ main ] - [ INFO  ] [ com.whut.blog.BlogV1ApplicationTests : 664 ] - The following profiles are active: dev
+2020-12-23 20:27:31.240 [ background-preinit ] - [ INFO  ] [ org.hibernate.validator.internal.util.Version : 21 ] - HV000001: Hibernate Validator 6.1.7.Final
+2020-12-23 20:27:32.060 [ main ] - [ WARN  ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 44 ] - No MyBatis mapper was found in '[com.whut.blog]' package. Please check your configuration.
+2020-12-23 20:27:32.651 [ main ] - [ INFO  ] [ org.hibernate.jpa.internal.util.LogHelper : 31 ] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-12-23 20:27:32.704 [ main ] - [ INFO  ] [ org.hibernate.Version : 44 ] - HHH000412: Hibernate ORM core version 5.4.25.Final
+2020-12-23 20:27:32.824 [ main ] - [ INFO  ] [ org.hibernate.annotations.common.Version : 56 ] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2020-12-23 20:27:32.978 [ main ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 110 ] - HikariPool-1 - Starting...
+2020-12-23 20:27:33.313 [ main ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 123 ] - HikariPool-1 - Start completed.
+2020-12-23 20:27:33.334 [ main ] - [ INFO  ] [ org.hibernate.dialect.Dialect : 175 ] - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-12-23 20:27:34.058 [ main ] - [ INFO  ] [ o.h.e.t.jta.platform.internal.JtaPlatformInitiator : 52 ] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-12-23 20:27:36.214 [ main ] - [ INFO  ] [ com.whut.blog.BlogV1ApplicationTests : 61 ] - Started BlogV1ApplicationTests in 5.425 seconds (JVM running for 6.254)
+2020-12-23 20:27:36.381 [ SpringContextShutdownHook ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 350 ] - HikariPool-1 - Shutdown initiated...
+2020-12-23 20:27:36.393 [ SpringContextShutdownHook ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 352 ] - HikariPool-1 - Shutdown completed.
+2020-12-23 20:28:00.099 [ Thread-13 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 350 ] - HikariPool-3 - Shutdown initiated...
+2020-12-23 20:28:00.107 [ Thread-13 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 352 ] - HikariPool-3 - Shutdown completed.

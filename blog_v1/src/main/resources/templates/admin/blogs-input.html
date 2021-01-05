@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="admin/fragments :: head(~{::title})">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>博客发布</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="../../static/asserts/css/mystyle.css">
+    <link rel="stylesheet" href="../../static/lib/editor/css/editormd.min.css">
+</head>
+<body>
+
+<!--导航-->
+<nav th:replace="admin/fragments :: adminmenu(1)" class="ui inverted attached segment  m-padded-tb-mini m-shadow-small">
+    <div class="ui container">
+        <div class="ui inverted secondary stackable menu">
+            <h2 class="ui teal header item">Blog</h2>
+            <a href="#" class="m-item item m-mobile-hide"><i class="home icon"></i>博客</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class="idea icon"></i>分类</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class="tags icon"></i>标签</a>
+            <div class="m-item m-mobile-hide right menu">
+                <div class="ui dropdown item">
+                    <div class="text">
+                        <img src="https://picsum.photos/id/1012/100/100" alt="" class="ui avatar image">
+                        一大岐
+                    </div>
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <a href="#" class="item">注销</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="ui menu toggle black icon button m-right-top m-mobile-show">
+        <i class="sidebar icon"></i>
+    </a>
+</nav>
+<!--二级目录-->
+<div class="ui attached pointing menu">
+    <div class="ui container">
+        <div class="right menu">
+            <a href="#" th:href="@{/admin/blogs/input}" class="active teal item">写博客</a>
+            <a href="#" th:href="@{/admin/blogs}" class="item">列表</a>
+        </div>
+    </div>
+</div>
+<!--中间内容-->
+<div class="m-padded-tb-big">
+    <div class="ui container">
+        <form id="blog-form" action="#" th:action="@{/admin/blogs}" th:object="${blog}"  method="post" class="ui form">
+            <input type="hidden" name="published">
+            <input type="hidden" name="id" th:value="*{id}" th:if="*{id!=null}"/>
+            <div class="required field">
+                <div class="ui left labeled input">
+                    <div class="ui selection compact teal basic dropdown label">
+                        <input type="hidden" value="原创" name="flag" th:value="*{flag} != null ? *{flag} : '原创'">
+                        <i class="dropdown icon"></i>
+                        <div class="default text">原创</div>
+                        <div class="menu">
+                            <div class="item" data-value="原创">原创</div>
+                            <div class="item" data-value="转载">转载</div>
+                            <div class="item" data-value="翻译">翻译</div>
+                        </div>
+                    </div>
+                    <input type="text" name="title" th:value="*{title}" placeholder="标题">
+                </div>
+            </div>
+            <div class="required field">
+                <div id="md-content" style="z-index: 1 !important;">
+                    <textarea placeholder="博客内容" name="content" th:text="*{content}" style="display: none"></textarea>
+                </div>
+
+            </div>
+            <div class="two fields">
+                <div class="required field">
+                    <div class="ui left labeled action input">
+                        <label class="ui compact teal basic label">分类</label>
+                        <div class="ui fluid selection dropdown">
+                            <input type="hidden" name="type.id" th:value="*{type!=null} ? *{type.id}">
+                            <i class="dropdown icon"></i>
+                            <div class="default text">开发日志</div>
+                            <div class="menu">
+                                <div th:each="type : ${types}" class="item" data-value="1" th:data-value="${type.id}" th:text="${type.name}">错误日志</div>
+                                <!--/*-->
+                                <div class="item" data-value="2">开发日志</div>
+                                <!--*/-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui left labeled action input">
+                        <label class="ui compact teal basic label">标签</label>
+                        <div class="ui fluid selection multiple search dropdown">
+                            <input type="hidden" name="tagIds" th:value="*{tagIds}">
+                            <i class="dropdown icon"></i>
+                            <div class="default text">java</div>
+                            <div class="menu">
+                                <div class="item" th:each="tag : ${tags}" data-value="1" th:data-value="${tag.id}" th:text="${tag.name}">java</div>
+                                <!--/*-->
+                                <div class="item" data-value="2">c++</div>
+                                <!--*/-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="field">
+                <div class="ui left labeled input">
+                    <label class="ui teal basic label">图片</label>
+                    <input type="text" name="firstPicture" th:value="*{firstPicture}" placeholder="首图引用地址">
+                </div>
+            </div>
+            <div class="required field">
+                <textarea name="description" th:text="*{description}" placeholder="博客描述..." maxlength="200"></textarea>
+            </div>
+            <div class="inline fields">
+                <div class="field">
+                    <div class="ui checkbox">
+                        <input type="checkbox" id="recommend" name="recommend" th:checked="*{recommend}" class="hidden">
+                        <label for="recommend">推荐</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui checkbox">
+                        <input type="checkbox" id="shareStatement" name="shareStatement" th:checked="*{shareStatement}" class="hidden">
+                        <label for="shareStatement">转载声明</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui checkbox">
+                        <input type="checkbox" id="appreciation" name="appreciation" th:checked="*{appreciation}" class="hidden">
+                        <label for="appreciation">赞赏</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui checkbox">
+                        <input type="checkbox" id="commentable" name="commentable" th:checked="*{commentable}" class="hidden">
+                        <label for="commentable">留言</label>
+                    </div>
+                </div>
+            </div>
+
+            <!--错误提示-->
+            <div class="ui error message"></div>
+
+
+            <div class="ui right aligned container">
+                <button type="button" class="ui button" onclick="window.history.go(-1)">返回</button>
+                <button type="button" id="save-btn" class="ui secondary button">保存</button>
+                <button type="button" id="publish-btn" class="ui teal button">发布</button>
+            </div>
+        </form>
+
+    </div>
+</div>
+
+<!--底部footer-->
+<footer th:replace="admin/fragments :: footer" class="ui inverted vertical segment m-padded-tb-massive">
+    <div class="ui center aligned container">
+        <div class="ui inverted divided stackable grid">
+            <div class="three wide column">
+                <div class="inverted link list">
+                    <div class="item">
+                        <img src="../../static/asserts/images/wechat.png" class="ui round image" alt="" style="width: 100px; margin: auto">
+                    </div> 
+                </div>
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header m-text-spaced m-text-thin">最新博客</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item m-text-thin">博客1</a>
+                    <a href="#" class="item m-text-thin">博客2</a>
+                    <a href="#" class="item m-text-thin">博客3</a>
+                </div>
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header m-text-spaced m-text-thin">联系我</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item m-text-thin">Email: 1184384017@qq.com</a>
+                    <a href="#" class="item m-text-thin">QQ: 1184384017</a>
+                </div>
+            </div>
+            <div class="seven wide column">
+                <h4 class="ui inverted header m-text-spaced m-text-thin">Blog</h4>
+                <p class="m-text-thin m-text-spaced m-opacity-mini">这是我的个人博客，会分享一些关于编程的问题</p>
+            </div>
+        </div>
+        <div class="ui inverted section divider"></div>
+        <p class="m-text-thin m-text-spaced m-opacity-tiny">©2020 Blog Designed by fyun</p>
+    </div>
+</footer>
+<!--/*/<th:block th:replace="admin/fragments :: script">/*/-->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+<script src="../../static/lib/editor/editormd.min.js"></script>
+<!--/*/</th:block>/*/-->
+<script>
+    $('.ui.dropdown').dropdown({
+        on : 'hover'
+    });
+    //初始化markdown编辑器
+    var contentEditor;
+    $(function () {
+        contentEditor = editormd("md-content", {
+            width : "100%",
+            height : 640,
+            syncScrolling　: "single",
+            // path : "../../static/lib/editor/lib/"
+            path : "/lib/editor/lib/",
+
+            imageUpload : true, //必须
+            imageFormats : ["jpg", "jpeg", "gif", "png", "bmp", "webp"],
+            imageUploadURL : "../../uploadfile", //必须
+            onload : function() {
+                initPasteDragImg(this); //必须
+            }
+        });
+    });
+
+    $('.menu.toggle').click(function () {
+        $('.m-item').toggleClass('m-mobile-hide');
+    });
+
+    $('#save-btn').click(function () {
+        $('[name="published"]').val(false);
+        $('#blog-form').submit();
+    });
+    $('#publish-btn').click(function () {
+        $('[name="published"]').val(true);
+        $('#blog-form').submit();
+    });
+
+//    定义规则
+    $('.ui.form').form({
+        fields : {
+            title : {
+                identifier : 'title',
+                rules : [{
+                    type : 'empty',
+                    prompt : '标题：请输入博客标题'
+                }]
+            },
+            content : {
+                identifier : 'content',
+                rules : [{
+                    type : 'empty',
+                    prompt : '标题：请输入博客内容'
+                }]
+            },
+            typeId : {
+                identifier : 'typeId',
+                rules : [{
+                    type : 'empty',
+                    prompt : '标题：请输入博客分类'
+                }]
+            },
+            description : {
+                identifier : 'description',
+                rules : [{
+                    type : 'empty',
+                    prompt : '标题：请输入博客描述'
+                }]
+            }
+        }
+
+    });
+    //消息提示框关闭
+    $('.message .close')
+        .on('click',function () {
+            $(this).closest('.message')
+                .transition('fade');
+        });
+
+    //
+    function initPasteDragImg(Editor){
+        var doc = document.getElementById(Editor.id)
+        doc.addEventListener('paste', function (event) {
+            var items = (event.clipboardData || window.clipboardData).items;
+            var file = null;
+            if (items && items.length) {
+                // 搜索剪切板items
+                for (var i = 0; i < items.length; i++) {
+                    if (items[i].type.indexOf('image') !== -1) {
+                        file = items[i].getAsFile();
+                        break;
+                    }
+                }
+            } else {
+                console.log("当前浏览器不支持");
+                return;
+            }
+            if (!file) {
+                console.log("粘贴内容非图片");
+                return;
+            }
+            uploadImg(file,Editor);
+        });
+        var dashboard = document.getElementById(Editor.id)
+        dashboard.addEventListener("dragover", function (e) {
+            e.preventDefault()
+            e.stopPropagation()
+        })
+        dashboard.addEventListener("dragenter", function (e) {
+            e.preventDefault()
+            e.stopPropagation()
+        })
+        dashboard.addEventListener("drop", function (e) {
+            e.preventDefault()
+            e.stopPropagation()
+            var files = this.files || e.dataTransfer.files;
+            uploadImg(files[0],Editor);
+        })
+    }
+    function uploadImg(file,Editor){
+        var formData = new FormData();
+        var fileName=new Date().getTime()+"."+file.name.split(".").pop();
+        formData.append('editormd-image-file', file,file.name);
+        $.ajax({
+            "type": 'POST',
+            "url": Editor.settings.imageUploadURL,//获取我们配置的url
+            "data": formData,
+            "dateType": "json",
+            "processData": false,
+            "contentType": false,
+            "mimeType": "multipart/form-data",
+            success: function(ret){
+                var json = $.parseJSON(ret);
+                if(json.success){
+                    var url = json.url;
+                    var arr = json.url.split(".");
+                    var type = arr[1];
+                    if(/(png|jpg|jpeg|gif|bmp|ico)/.test(type)){
+                        Editor.insertValue("![text]("+url+")");
+                    }else{
+                        Editor.insertValue("[下载附件]("+url+")");
+                    }
+                }else{
+                    alert("上传失败");
+                }
+            },
+            error: function (err){
+                console.log('请求失败')
+            }
+        });
+    }
+</script>
+</body>
+</html>
