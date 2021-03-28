@@ -3,7 +3,7 @@ spring:
     #   数据源基本配置
     username: root
     password: 123456
-    url: jdbc:mysql://10.138.219.23:3306/blog?serverTimezone=UTC
+    url: jdbc:mysql://10.138.213.16:3306/blog?serverTimezone=UTC
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:

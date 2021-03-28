@@ -1,6 +1,6 @@
 spring:
   profiles:
-    active: dev
+    active: pro
   thymeleaf:
     cache: false
   mvc:
@@ -9,3 +9,10 @@ spring:
         enabled: true
 
 comment.avatar: /asserts/images/avatar.png
+
+alibaba:
+  cloud:
+    access-key: xxxxxxxxxxxx
+    secret-key: xxxxxxxxxxxxx
+    oss:
+      endpoint: oss-cn-hangzhou.aliyuncs.com

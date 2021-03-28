@@ -1,3 +1,646 @@
-2020-12-31 18:07:42.658 [ restartedMain ] - [ INFO  ] [ com.whut.blog.BlogV1Application : 55 ] - Starting BlogV1Application using Java 14.0.1 on MSI with PID 12244 (E:\java_project\SpringBoot\blog_v1\target\classes started by MSI-PC in E:\java_project\SpringBoot\blog_v1)
-2020-12-31 18:07:42.664 [ restartedMain ] - [ DEBUG ] [ com.whut.blog.BlogV1Application : 56 ] - Running with Spring Boot v2.4.1, Spring v5.3.2
-2020-12-31 18:07:42.664 [ restartedMain ] - [ INFO  ] [ com.whut.blog.BlogV1Application : 664 ] - The following profiles are active: pro
+2021-03-11 20:06:35.601 [ restartedMain ] - [ INFO  ] [ com.whut.blog.BlogV1Application : 55 ] - Starting BlogV1Application using Java 14.0.1 on MSI with PID 13224 (E:\java_project\SpringBoot\blog_v1\target\classes started by MSI-PC in E:\java_project\SpringBoot\blog_v1)
+2021-03-11 20:06:35.606 [ restartedMain ] - [ DEBUG ] [ com.whut.blog.BlogV1Application : 56 ] - Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-03-11 20:06:35.607 [ restartedMain ] - [ INFO  ] [ com.whut.blog.BlogV1Application : 664 ] - The following profiles are active: pro
+2021-03-11 20:06:36.472 [ restartedMain ] - [ WARN  ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 44 ] - No MyBatis mapper was found in '[com.whut.blog]' package. Please check your configuration.
+2021-03-11 20:06:40.465 [ restartedMain ] - [ ERROR ] [ com.zaxxer.hikari.pool.HikariPool : 593 ] - HikariPool-1 - Exception during pool initialization.
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:358)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:477)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:560)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:176)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1224)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1255)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1847)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1784)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:609)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1159)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:913)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:588)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298)
+	at com.whut.blog.BlogV1Application.main(BlogV1Application.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:89)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:144)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:956)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:826)
+	... 55 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:589)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333)
+	at java.base/java.net.Socket.connect(Socket.java:648)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63)
+	... 58 common frames omitted
+2021-03-11 20:06:40.467 [ restartedMain ] - [ WARN  ] [ o.h.e.jdbc.env.internal.JdbcEnvironmentInitiator : 132 ] - HHH000342: Could not obtain connection to query metadata
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:358)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:477)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:560)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:176)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1224)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1255)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1847)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1784)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:609)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1159)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:913)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:588)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298)
+	at com.whut.blog.BlogV1Application.main(BlogV1Application.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:89)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:144)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:956)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:826)
+	... 55 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:589)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333)
+	at java.base/java.net.Socket.connect(Socket.java:648)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63)
+	... 58 common frames omitted
+2021-03-11 20:09:43.336 [ restartedMain ] - [ INFO  ] [ com.whut.blog.BlogV1Application : 55 ] - Starting BlogV1Application using Java 14.0.1 on MSI with PID 24096 (E:\java_project\SpringBoot\blog_v1\target\classes started by MSI-PC in E:\java_project\SpringBoot\blog_v1)
+2021-03-11 20:09:43.339 [ restartedMain ] - [ DEBUG ] [ com.whut.blog.BlogV1Application : 56 ] - Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-03-11 20:09:43.340 [ restartedMain ] - [ INFO  ] [ com.whut.blog.BlogV1Application : 664 ] - The following profiles are active: pro
+2021-03-11 20:09:44.287 [ restartedMain ] - [ WARN  ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 44 ] - No MyBatis mapper was found in '[com.whut.blog]' package. Please check your configuration.
+2021-03-11 20:09:50.529 [ restartedMain ] - [ INFO  ] [ com.whut.blog.BlogV1Application : 61 ] - Started BlogV1Application in 7.631 seconds (JVM running for 8.296)
+2021-03-11 20:10:34.902 [ http-nio-80-exec-1 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost/', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2021-03-11 20:10:35.321 [ http-nio-80-exec-1 ] - [ WARN  ] [ org.hibernate.orm.deprecation : 670 ] - HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-03-11 20:10:35.393 [ http-nio-80-exec-1 ] - [ WARN  ] [ org.hibernate.orm.deprecation : 670 ] - HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-03-11 20:10:35.594 [ http-nio-80-exec-1 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : index
+2021-03-11 20:10:37.208 [ http-nio-80-exec-10 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.newBlogs', args=[{}]}
+2021-03-11 20:10:37.359 [ http-nio-80-exec-10 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : fragments :: newblogList
+2021-03-11 20:11:12.903 [ http-nio-80-exec-5 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.newBlogs', args=[{}]}
+2021-03-11 20:11:12.935 [ http-nio-80-exec-5 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : fragments :: newblogList
+2021-03-11 20:11:16.813 [ http-nio-80-exec-3 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.newBlogs', args=[{}]}
+2021-03-11 20:11:16.841 [ http-nio-80-exec-3 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : fragments :: newblogList
+2021-03-11 20:11:20.625 [ http-nio-80-exec-4 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.newBlogs', args=[{}]}
+2021-03-11 20:11:20.705 [ http-nio-80-exec-4 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : fragments :: newblogList
+2021-03-11 21:04:56.776 [ restartedMain ] - [ INFO  ] [ com.whut.blog.BlogV1Application : 55 ] - Starting BlogV1Application using Java 14.0.1 on MSI with PID 10720 (E:\java_project\SpringBoot\blog_v1\target\classes started by MSI-PC in E:\java_project\SpringBoot\blog_v1)
+2021-03-11 21:04:56.778 [ restartedMain ] - [ DEBUG ] [ com.whut.blog.BlogV1Application : 56 ] - Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-03-11 21:04:56.779 [ restartedMain ] - [ INFO  ] [ com.whut.blog.BlogV1Application : 664 ] - The following profiles are active: pro
+2021-03-11 21:04:58.501 [ restartedMain ] - [ WARN  ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 44 ] - No MyBatis mapper was found in '[com.whut.blog]' package. Please check your configuration.
+2021-03-11 21:05:04.677 [ restartedMain ] - [ INFO  ] [ com.whut.blog.BlogV1Application : 61 ] - Started BlogV1Application in 8.573 seconds (JVM running for 9.667)
+2021-03-11 21:05:14.175 [ http-nio-80-exec-2 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.newBlogs', args=[{}]}
+2021-03-11 21:05:14.212 [ http-nio-80-exec-2 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : fragments :: newblogList
+2021-03-11 21:05:16.888 [ http-nio-80-exec-1 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.newBlogs', args=[{}]}
+2021-03-11 21:05:16.913 [ http-nio-80-exec-1 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : fragments :: newblogList
+2021-03-11 21:05:18.525 [ http-nio-80-exec-7 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.newBlogs', args=[{}]}
+2021-03-11 21:05:18.553 [ http-nio-80-exec-7 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : fragments :: newblogList
+2021-03-11 21:09:11.629 [ restartedMain ] - [ INFO  ] [ com.whut.blog.BlogV1Application : 55 ] - Starting BlogV1Application using Java 14.0.1 on MSI with PID 6444 (E:\java_project\SpringBoot\blog_v1\target\classes started by MSI-PC in E:\java_project\SpringBoot\blog_v1)
+2021-03-11 21:09:11.632 [ restartedMain ] - [ DEBUG ] [ com.whut.blog.BlogV1Application : 56 ] - Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-03-11 21:09:11.632 [ restartedMain ] - [ INFO  ] [ com.whut.blog.BlogV1Application : 664 ] - The following profiles are active: pro
+2021-03-11 21:09:12.568 [ restartedMain ] - [ WARN  ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 44 ] - No MyBatis mapper was found in '[com.whut.blog]' package. Please check your configuration.
+2021-03-11 21:09:16.643 [ restartedMain ] - [ INFO  ] [ com.whut.blog.BlogV1Application : 61 ] - Started BlogV1Application in 5.414 seconds (JVM running for 6.115)
+2021-03-11 21:09:21.977 [ http-nio-80-exec-2 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost/footer/newblogs', ip='127.0.0.1', classMethod='com.whut.blog.controller.IndexController.newBlogs', args=[{}]}
+2021-03-11 21:09:22.023 [ http-nio-80-exec-2 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : fragments :: newblogList
+2021-03-11 21:09:24.686 [ http-nio-80-exec-1 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost/footer/newblogs', ip='127.0.0.1', classMethod='com.whut.blog.controller.IndexController.newBlogs', args=[{}]}
+2021-03-11 21:09:24.711 [ http-nio-80-exec-1 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : fragments :: newblogList
+2021-03-11 21:09:26.457 [ http-nio-80-exec-9 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost/footer/newblogs', ip='127.0.0.1', classMethod='com.whut.blog.controller.IndexController.newBlogs', args=[{}]}
+2021-03-11 21:09:26.483 [ http-nio-80-exec-9 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : fragments :: newblogList
+2021-03-11 21:11:10.102 [ restartedMain ] - [ INFO  ] [ com.whut.blog.BlogV1Application : 55 ] - Starting BlogV1Application using Java 14.0.1 on MSI with PID 8392 (E:\java_project\SpringBoot\blog_v1\target\classes started by MSI-PC in E:\java_project\SpringBoot\blog_v1)
+2021-03-11 21:11:10.105 [ restartedMain ] - [ DEBUG ] [ com.whut.blog.BlogV1Application : 56 ] - Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-03-11 21:11:10.105 [ restartedMain ] - [ INFO  ] [ com.whut.blog.BlogV1Application : 664 ] - The following profiles are active: pro
+2021-03-11 21:11:10.913 [ restartedMain ] - [ WARN  ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 44 ] - No MyBatis mapper was found in '[com.whut.blog]' package. Please check your configuration.
+2021-03-11 21:11:14.451 [ restartedMain ] - [ INFO  ] [ com.whut.blog.BlogV1Application : 61 ] - Started BlogV1Application in 4.699 seconds (JVM running for 5.259)
+2021-03-11 21:11:21.673 [ http-nio-80-exec-8 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.newBlogs', args=[{}]}
+2021-03-11 21:11:21.755 [ http-nio-80-exec-8 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : fragments :: newblogList
+2021-03-11 21:11:24.360 [ http-nio-80-exec-5 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.newBlogs', args=[{}]}
+2021-03-11 21:11:24.407 [ http-nio-80-exec-5 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : fragments :: newblogList
+2021-03-11 21:11:26.799 [ http-nio-80-exec-9 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.newBlogs', args=[{}]}
+2021-03-11 21:11:26.826 [ http-nio-80-exec-9 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : fragments :: newblogList
+2021-03-11 21:14:45.583 [ restartedMain ] - [ INFO  ] [ com.whut.blog.BlogV1Application : 55 ] - Starting BlogV1Application using Java 14.0.1 on MSI with PID 19404 (E:\java_project\SpringBoot\blog_v1\target\classes started by MSI-PC in E:\java_project\SpringBoot\blog_v1)
+2021-03-11 21:14:45.586 [ restartedMain ] - [ DEBUG ] [ com.whut.blog.BlogV1Application : 56 ] - Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-03-11 21:14:45.586 [ restartedMain ] - [ INFO  ] [ com.whut.blog.BlogV1Application : 664 ] - The following profiles are active: pro
+2021-03-11 21:14:46.554 [ restartedMain ] - [ WARN  ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 44 ] - No MyBatis mapper was found in '[com.whut.blog]' package. Please check your configuration.
+2021-03-11 21:14:50.755 [ restartedMain ] - [ INFO  ] [ com.whut.blog.BlogV1Application : 61 ] - Started BlogV1Application in 5.497 seconds (JVM running for 6.333)
+2021-03-11 21:14:56.941 [ http-nio-80-exec-4 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.newBlogs', args=[{}]}
+2021-03-11 21:14:56.993 [ http-nio-80-exec-4 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : fragments :: newblogList
+2021-03-11 21:15:00.099 [ http-nio-80-exec-1 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.newBlogs', args=[{}]}
+2021-03-11 21:15:00.123 [ http-nio-80-exec-1 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : fragments :: newblogList
+2021-03-11 21:15:01.166 [ http-nio-80-exec-9 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.newBlogs', args=[{}]}
+2021-03-11 21:15:01.192 [ http-nio-80-exec-9 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : fragments :: newblogList
+2021-03-11 21:25:33.113 [ http-nio-80-exec-5 ] - [ ERROR ] [ com.whut.blog.handler.ControllerExceptionHandler : 28 ] - Request URL : http://localhost/admin/blogs, Exception : {}
+org.springframework.dao.InvalidDataAccessApiUsageException: The given id must not be null!; nested exception is java.lang.IllegalArgumentException: The given id must not be null!
+	at org.springframework.orm.jpa.EntityManagerFactoryUtils.convertJpaAccessExceptionIfPossible(EntityManagerFactoryUtils.java:374)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:235)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:551)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:242)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:152)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at com.sun.proxy.$Proxy121.findById(Unknown Source)
+	at com.whut.blog.service.imp.TypeServiceImp.getType(TypeServiceImp.java:32)
+	at com.whut.blog.service.imp.TypeServiceImp$$FastClassBySpringCGLIB$$10c17367.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.whut.blog.service.imp.TypeServiceImp$$EnhancerBySpringCGLIB$$d2015589.getType(<generated>)
+	at com.whut.blog.controller.admin.BlogController.addBlog(BlogController.java:70)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1061)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:961)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:94)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: java.lang.IllegalArgumentException: The given id must not be null!
+	at org.springframework.util.Assert.notNull(Assert.java:201)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById(SimpleJpaRepository.java:269)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:524)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:531)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:156)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:131)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	... 75 common frames omitted
+2021-03-11 21:25:33.577 [ http-nio-80-exec-8 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.newBlogs', args=[{}]}
+2021-03-11 21:25:33.601 [ http-nio-80-exec-8 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : fragments :: newblogList
+2021-03-11 21:25:45.254 [ http-nio-80-exec-7 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost/', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2021-03-11 21:25:45.413 [ http-nio-80-exec-7 ] - [ WARN  ] [ org.hibernate.orm.deprecation : 670 ] - HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-03-11 21:25:45.440 [ http-nio-80-exec-7 ] - [ WARN  ] [ org.hibernate.orm.deprecation : 670 ] - HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-03-11 21:25:45.487 [ http-nio-80-exec-7 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : index
+2021-03-11 21:25:46.100 [ http-nio-80-exec-4 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.newBlogs', args=[{}]}
+2021-03-11 21:25:46.125 [ http-nio-80-exec-4 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : fragments :: newblogList
+2021-03-11 21:25:47.200 [ http-nio-80-exec-10 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2021-03-11 21:25:47.386 [ http-nio-80-exec-10 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : types
+2021-03-11 21:25:47.868 [ http-nio-80-exec-9 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.newBlogs', args=[{}]}
+2021-03-11 21:25:47.893 [ http-nio-80-exec-9 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : fragments :: newblogList
+2021-03-11 21:25:48.717 [ http-nio-80-exec-6 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost/tags/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.TagShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2021-03-11 21:25:49.012 [ http-nio-80-exec-6 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : tags
+2021-03-11 21:25:49.514 [ http-nio-80-exec-7 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.newBlogs', args=[{}]}
+2021-03-11 21:25:49.539 [ http-nio-80-exec-7 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : fragments :: newblogList
+2021-03-11 21:25:49.776 [ http-nio-80-exec-8 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost/archives', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.ArchiveShowController.archives', args=[{}]}
+2021-03-11 21:25:49.961 [ http-nio-80-exec-8 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : archives
+2021-03-11 21:25:50.551 [ http-nio-80-exec-10 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.newBlogs', args=[{}]}
+2021-03-11 21:25:50.578 [ http-nio-80-exec-10 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : fragments :: newblogList
+2021-03-11 21:25:51.046 [ http-nio-80-exec-5 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost/about', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.about', args=[]}
+2021-03-11 21:25:51.046 [ http-nio-80-exec-5 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : about
+2021-03-11 21:25:51.495 [ http-nio-80-exec-4 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.newBlogs', args=[{}]}
+2021-03-11 21:25:51.546 [ http-nio-80-exec-4 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : fragments :: newblogList
+2021-03-11 21:25:52.655 [ http-nio-80-exec-8 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost/', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2021-03-11 21:25:52.883 [ http-nio-80-exec-8 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : index
+2021-03-11 21:25:53.354 [ http-nio-80-exec-9 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.newBlogs', args=[{}]}
+2021-03-11 21:25:53.383 [ http-nio-80-exec-9 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : fragments :: newblogList
+2021-03-11 21:26:10.454 [ http-nio-80-exec-6 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.newBlogs', args=[{}]}
+2021-03-11 21:26:10.477 [ http-nio-80-exec-6 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : fragments :: newblogList
+2021-03-11 21:26:12.914 [ http-nio-80-exec-4 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.newBlogs', args=[{}]}
+2021-03-11 21:26:12.938 [ http-nio-80-exec-4 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : fragments :: newblogList
+2021-03-11 21:26:14.173 [ http-nio-80-exec-10 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.newBlogs', args=[{}]}
+2021-03-11 21:26:14.196 [ http-nio-80-exec-10 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : fragments :: newblogList
+2021-03-11 21:26:20.468 [ http-nio-80-exec-5 ] - [ WARN  ] [ com.aliyun.oss : 70 ] - [Unknown]Unable to execute HTTP request: Connection pool shut down
+2021-03-11 21:26:54.833 [ restartedMain ] - [ INFO  ] [ com.whut.blog.BlogV1Application : 55 ] - Starting BlogV1Application using Java 14.0.1 on MSI with PID 11324 (E:\java_project\SpringBoot\blog_v1\target\classes started by MSI-PC in E:\java_project\SpringBoot\blog_v1)
+2021-03-11 21:26:54.836 [ restartedMain ] - [ DEBUG ] [ com.whut.blog.BlogV1Application : 56 ] - Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-03-11 21:26:54.837 [ restartedMain ] - [ INFO  ] [ com.whut.blog.BlogV1Application : 664 ] - The following profiles are active: pro
+2021-03-11 21:26:55.638 [ restartedMain ] - [ WARN  ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 44 ] - No MyBatis mapper was found in '[com.whut.blog]' package. Please check your configuration.
+2021-03-11 21:26:59.225 [ restartedMain ] - [ INFO  ] [ com.whut.blog.BlogV1Application : 61 ] - Started BlogV1Application in 4.762 seconds (JVM running for 5.255)
+2021-03-11 21:27:09.384 [ http-nio-80-exec-8 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.newBlogs', args=[{}]}
+2021-03-11 21:27:09.442 [ http-nio-80-exec-8 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : fragments :: newblogList
+2021-03-11 21:27:11.873 [ http-nio-80-exec-1 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.newBlogs', args=[{}]}
+2021-03-11 21:27:11.903 [ http-nio-80-exec-1 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : fragments :: newblogList
+2021-03-11 21:27:13.380 [ http-nio-80-exec-4 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.newBlogs', args=[{}]}
+2021-03-11 21:27:13.407 [ http-nio-80-exec-4 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : fragments :: newblogList
+2021-03-11 21:27:45.366 [ http-nio-80-exec-10 ] - [ ERROR ] [ com.whut.blog.handler.ControllerExceptionHandler : 28 ] - Request URL : http://localhost/admin/blogs, Exception : {}
+org.springframework.dao.InvalidDataAccessApiUsageException: The given id must not be null!; nested exception is java.lang.IllegalArgumentException: The given id must not be null!
+	at org.springframework.orm.jpa.EntityManagerFactoryUtils.convertJpaAccessExceptionIfPossible(EntityManagerFactoryUtils.java:374)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:235)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:551)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:242)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:152)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at com.sun.proxy.$Proxy121.findById(Unknown Source)
+	at com.whut.blog.service.imp.TypeServiceImp.getType(TypeServiceImp.java:32)
+	at com.whut.blog.service.imp.TypeServiceImp$$FastClassBySpringCGLIB$$10c17367.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.whut.blog.service.imp.TypeServiceImp$$EnhancerBySpringCGLIB$$b63046fc.getType(<generated>)
+	at com.whut.blog.controller.admin.BlogController.addBlog(BlogController.java:70)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1061)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:961)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:94)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: java.lang.IllegalArgumentException: The given id must not be null!
+	at org.springframework.util.Assert.notNull(Assert.java:201)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById(SimpleJpaRepository.java:269)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:524)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:531)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:156)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:131)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	... 75 common frames omitted
+2021-03-11 21:27:45.643 [ http-nio-80-exec-1 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.newBlogs', args=[{}]}
+2021-03-11 21:27:45.667 [ http-nio-80-exec-1 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : fragments :: newblogList
+2021-03-11 21:28:00.575 [ http-nio-80-exec-8 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost/', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2021-03-11 21:28:00.741 [ http-nio-80-exec-8 ] - [ WARN  ] [ org.hibernate.orm.deprecation : 670 ] - HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-03-11 21:28:00.773 [ http-nio-80-exec-8 ] - [ WARN  ] [ org.hibernate.orm.deprecation : 670 ] - HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-03-11 21:28:00.823 [ http-nio-80-exec-8 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : index
+2021-03-11 21:28:01.376 [ http-nio-80-exec-7 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.newBlogs', args=[{}]}
+2021-03-11 21:28:01.402 [ http-nio-80-exec-7 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : fragments :: newblogList
+2021-03-11 21:28:03.246 [ http-nio-80-exec-10 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2021-03-11 21:28:03.437 [ http-nio-80-exec-10 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : types
+2021-03-11 21:28:03.868 [ http-nio-80-exec-1 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.newBlogs', args=[{}]}
+2021-03-11 21:28:03.893 [ http-nio-80-exec-1 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : fragments :: newblogList
+2021-03-11 21:28:05.031 [ http-nio-80-exec-5 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost/tags/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.TagShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2021-03-11 21:28:05.231 [ http-nio-80-exec-5 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : tags
+2021-03-11 21:28:05.630 [ http-nio-80-exec-8 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.newBlogs', args=[{}]}
+2021-03-11 21:28:05.655 [ http-nio-80-exec-8 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : fragments :: newblogList
+2021-03-11 21:28:06.381 [ http-nio-80-exec-2 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost/archives', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.ArchiveShowController.archives', args=[{}]}
+2021-03-11 21:28:06.572 [ http-nio-80-exec-2 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : archives
+2021-03-11 21:28:06.999 [ http-nio-80-exec-6 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.newBlogs', args=[{}]}
+2021-03-11 21:28:07.025 [ http-nio-80-exec-6 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : fragments :: newblogList
+2021-03-11 21:28:07.292 [ http-nio-80-exec-7 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost/about', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.about', args=[]}
+2021-03-11 21:28:07.292 [ http-nio-80-exec-7 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : about
+2021-03-11 21:28:07.628 [ http-nio-80-exec-1 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.newBlogs', args=[{}]}
+2021-03-11 21:28:07.675 [ http-nio-80-exec-1 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : fragments :: newblogList
+2021-03-11 21:29:31.361 [ restartedMain ] - [ INFO  ] [ com.whut.blog.BlogV1Application : 55 ] - Starting BlogV1Application using Java 14.0.1 on MSI with PID 6780 (E:\java_project\SpringBoot\blog_v1\target\classes started by MSI-PC in E:\java_project\SpringBoot\blog_v1)
+2021-03-11 21:29:31.364 [ restartedMain ] - [ DEBUG ] [ com.whut.blog.BlogV1Application : 56 ] - Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-03-11 21:29:31.364 [ restartedMain ] - [ INFO  ] [ com.whut.blog.BlogV1Application : 664 ] - The following profiles are active: pro
+2021-03-11 21:29:31.363 [ background-preinit ] - [ INFO  ] [ org.hibernate.validator.internal.util.Version : 21 ] - HV000001: Hibernate Validator 6.1.7.Final
+2021-03-11 21:29:32.201 [ restartedMain ] - [ WARN  ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 44 ] - No MyBatis mapper was found in '[com.whut.blog]' package. Please check your configuration.
+2021-03-11 21:29:32.633 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-80"]
+2021-03-11 21:29:32.634 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2021-03-11 21:29:32.634 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-03-11 21:29:32.695 [ restartedMain ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring embedded WebApplicationContext
+2021-03-11 21:29:32.814 [ restartedMain ] - [ INFO  ] [ org.hibernate.jpa.internal.util.LogHelper : 31 ] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-11 21:29:32.840 [ restartedMain ] - [ INFO  ] [ org.hibernate.Version : 44 ] - HHH000412: Hibernate ORM core version 5.4.25.Final
+2021-03-11 21:29:32.913 [ restartedMain ] - [ INFO  ] [ org.hibernate.annotations.common.Version : 56 ] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-11 21:29:32.967 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 110 ] - HikariPool-1 - Starting...
+2021-03-11 21:29:33.465 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 123 ] - HikariPool-1 - Start completed.
+2021-03-11 21:29:33.476 [ restartedMain ] - [ INFO  ] [ org.hibernate.dialect.Dialect : 175 ] - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-03-11 21:29:34.402 [ restartedMain ] - [ INFO  ] [ o.h.e.t.jta.platform.internal.JtaPlatformInitiator : 52 ] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-11 21:29:35.814 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-80"]
+2021-03-11 21:29:35.848 [ restartedMain ] - [ INFO  ] [ com.whut.blog.BlogV1Application : 61 ] - Started BlogV1Application in 4.829 seconds (JVM running for 5.347)
+2021-03-11 21:29:39.630 [ http-nio-80-exec-1 ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-11 21:29:39.654 [ http-nio-80-exec-1 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost/', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2021-03-11 21:29:39.855 [ http-nio-80-exec-1 ] - [ WARN  ] [ org.hibernate.orm.deprecation : 670 ] - HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-03-11 21:29:39.899 [ http-nio-80-exec-1 ] - [ WARN  ] [ org.hibernate.orm.deprecation : 670 ] - HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-03-11 21:29:39.950 [ http-nio-80-exec-1 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : index
+2021-03-11 21:29:40.724 [ http-nio-80-exec-2 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.newBlogs', args=[{}]}
+2021-03-11 21:29:40.750 [ http-nio-80-exec-2 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : fragments :: newblogList
+2021-03-11 21:29:50.710 [ http-nio-80-exec-7 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.newBlogs', args=[{}]}
+2021-03-11 21:29:50.736 [ http-nio-80-exec-7 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : fragments :: newblogList
+2021-03-11 21:29:53.983 [ http-nio-80-exec-4 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.newBlogs', args=[{}]}
+2021-03-11 21:29:54.008 [ http-nio-80-exec-4 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : fragments :: newblogList
+2021-03-11 21:29:55.132 [ http-nio-80-exec-9 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.newBlogs', args=[{}]}
+2021-03-11 21:29:55.157 [ http-nio-80-exec-9 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : fragments :: newblogList
+2021-03-11 21:30:22.678 [ http-nio-80-exec-9 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.newBlogs', args=[{}]}
+2021-03-11 21:30:22.704 [ http-nio-80-exec-9 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : fragments :: newblogList
+2021-03-11 21:30:26.488 [ http-nio-80-exec-3 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.newBlogs', args=[{}]}
+2021-03-11 21:30:26.524 [ http-nio-80-exec-3 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : fragments :: newblogList
+2021-03-11 21:30:29.610 [ http-nio-80-exec-2 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.newBlogs', args=[{}]}
+2021-03-11 21:30:29.636 [ http-nio-80-exec-2 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : fragments :: newblogList
+2021-03-11 21:30:32.621 [ http-nio-80-exec-4 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.newBlogs', args=[{}]}
+2021-03-11 21:30:32.648 [ http-nio-80-exec-4 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : fragments :: newblogList
+2021-03-11 21:30:38.499 [ http-nio-80-exec-7 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.newBlogs', args=[{}]}
+2021-03-11 21:30:38.523 [ http-nio-80-exec-7 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : fragments :: newblogList
+2021-03-11 21:30:41.908 [ http-nio-80-exec-5 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.newBlogs', args=[{}]}
+2021-03-11 21:30:41.933 [ http-nio-80-exec-5 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : fragments :: newblogList
+2021-03-11 21:30:43.242 [ http-nio-80-exec-1 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.newBlogs', args=[{}]}
+2021-03-11 21:30:43.268 [ http-nio-80-exec-1 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : fragments :: newblogList
+2021-03-11 21:30:48.514 [ http-nio-80-exec-6 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost/', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2021-03-11 21:30:48.798 [ http-nio-80-exec-6 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : index
+2021-03-11 21:30:49.325 [ http-nio-80-exec-5 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.newBlogs', args=[{}]}
+2021-03-11 21:30:49.348 [ http-nio-80-exec-5 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : fragments :: newblogList
+2021-03-11 21:30:50.846 [ http-nio-80-exec-3 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost/blog/1', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.blog', args=[1, {}]}
+2021-03-11 21:30:51.177 [ http-nio-80-exec-3 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : blog
+2021-03-11 21:30:51.626 [ http-nio-80-exec-10 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.newBlogs', args=[{}]}
+2021-03-11 21:30:51.652 [ http-nio-80-exec-10 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : fragments :: newblogList
+2021-03-11 21:49:09.255 [ restartedMain ] - [ INFO  ] [ com.whut.blog.BlogV1Application : 55 ] - Starting BlogV1Application using Java 14.0.1 on MSI with PID 4060 (E:\java_project\SpringBoot\blog_v1\target\classes started by MSI-PC in E:\java_project\SpringBoot\blog_v1)
+2021-03-11 21:49:09.257 [ restartedMain ] - [ DEBUG ] [ com.whut.blog.BlogV1Application : 56 ] - Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-03-11 21:49:09.257 [ restartedMain ] - [ INFO  ] [ com.whut.blog.BlogV1Application : 664 ] - The following profiles are active: pro
+2021-03-11 21:49:09.257 [ background-preinit ] - [ INFO  ] [ org.hibernate.validator.internal.util.Version : 21 ] - HV000001: Hibernate Validator 6.1.7.Final
+2021-03-11 21:49:10.319 [ restartedMain ] - [ WARN  ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 44 ] - No MyBatis mapper was found in '[com.whut.blog]' package. Please check your configuration.
+2021-03-11 21:49:10.842 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-80"]
+2021-03-11 21:49:10.843 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2021-03-11 21:49:10.844 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-03-11 21:49:10.909 [ restartedMain ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring embedded WebApplicationContext
+2021-03-11 21:49:11.046 [ restartedMain ] - [ INFO  ] [ org.hibernate.jpa.internal.util.LogHelper : 31 ] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-11 21:49:11.075 [ restartedMain ] - [ INFO  ] [ org.hibernate.Version : 44 ] - HHH000412: Hibernate ORM core version 5.4.25.Final
+2021-03-11 21:49:11.157 [ restartedMain ] - [ INFO  ] [ org.hibernate.annotations.common.Version : 56 ] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-11 21:49:11.214 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 110 ] - HikariPool-1 - Starting...
+2021-03-11 21:49:11.684 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 123 ] - HikariPool-1 - Start completed.
+2021-03-11 21:49:11.696 [ restartedMain ] - [ INFO  ] [ org.hibernate.dialect.Dialect : 175 ] - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-03-11 21:49:12.650 [ restartedMain ] - [ INFO  ] [ o.h.e.t.jta.platform.internal.JtaPlatformInitiator : 52 ] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-11 21:49:14.270 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-80"]
+2021-03-11 21:49:14.320 [ restartedMain ] - [ INFO  ] [ com.whut.blog.BlogV1Application : 61 ] - Started BlogV1Application in 5.479 seconds (JVM running for 6.158)
+2021-03-11 21:49:15.410 [ http-nio-80-exec-1 ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-11 21:49:15.436 [ http-nio-80-exec-1 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost/blog/1', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.blog', args=[1, {}]}
+2021-03-11 21:49:15.697 [ http-nio-80-exec-1 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : blog
+2021-03-11 21:49:16.269 [ http-nio-80-exec-5 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.newBlogs', args=[{}]}
+2021-03-11 21:49:16.300 [ http-nio-80-exec-5 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : fragments :: newblogList
+2021-03-11 21:49:23.640 [ http-nio-80-exec-6 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.newBlogs', args=[{}]}
+2021-03-11 21:49:23.665 [ http-nio-80-exec-6 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : fragments :: newblogList
+2021-03-11 21:49:25.333 [ http-nio-80-exec-4 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.newBlogs', args=[{}]}
+2021-03-11 21:49:25.356 [ http-nio-80-exec-4 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : fragments :: newblogList
+2021-03-11 21:49:26.460 [ http-nio-80-exec-9 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.newBlogs', args=[{}]}
+2021-03-11 21:49:26.484 [ http-nio-80-exec-9 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : fragments :: newblogList
+2021-03-11 21:50:03.577 [ http-nio-80-exec-8 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.newBlogs', args=[{}]}
+2021-03-11 21:50:03.603 [ http-nio-80-exec-8 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : fragments :: newblogList
+2021-03-11 21:50:04.429 [ http-nio-80-exec-6 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.newBlogs', args=[{}]}
+2021-03-11 21:50:04.453 [ http-nio-80-exec-6 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : fragments :: newblogList
+2021-03-11 21:50:06.146 [ http-nio-80-exec-4 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 35 ] - Request : {url='http://localhost/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.whut.blog.controller.IndexController.newBlogs', args=[{}]}
+2021-03-11 21:50:06.173 [ http-nio-80-exec-4 ] - [ INFO  ] [ com.whut.blog.aspect.LogAspect : 43 ] - Result : fragments :: newblogList
+2021-03-11 21:51:19.497 [ Thread-4 ] - [ INFO  ] [ c.a.c.s.boot.oss.context.OssApplicationListener : 42 ] - 1 OSSClients will be shutdown soon
+2021-03-11 21:51:19.497 [ Thread-4 ] - [ INFO  ] [ c.a.c.s.boot.oss.context.OssApplicationListener : 44 ] - shutdown ossClient: ossClient
+2021-03-11 21:51:19.557 [ Thread-4 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 350 ] - HikariPool-1 - Shutdown initiated...
+2021-03-11 21:51:19.566 [ Thread-4 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 352 ] - HikariPool-1 - Shutdown completed.
+2021-03-11 21:51:42.283 [ restartedMain ] - [ INFO  ] [ com.whut.blog.BlogV1Application : 55 ] - Starting BlogV1Application using Java 14.0.1 on MSI with PID 4060 (E:\java_project\SpringBoot\blog_v1\target\classes started by MSI-PC in E:\java_project\SpringBoot\blog_v1)
+2021-03-11 21:51:42.283 [ restartedMain ] - [ DEBUG ] [ com.whut.blog.BlogV1Application : 56 ] - Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-03-11 21:51:42.283 [ restartedMain ] - [ INFO  ] [ com.whut.blog.BlogV1Application : 664 ] - The following profiles are active: pro
+2021-03-11 21:51:42.432 [ restartedMain ] - [ WARN  ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 44 ] - No MyBatis mapper was found in '[com.whut.blog]' package. Please check your configuration.
+2021-03-11 21:51:43.025 [ restartedMain ] - [ INFO  ] [ com.whut.blog.BlogV1Application : 61 ] - Started BlogV1Application in 0.78 seconds (JVM running for 154.862)
+2021-03-11 21:51:46.675 [ restartedMain ] - [ INFO  ] [ com.whut.blog.BlogV1Application : 55 ] - Starting BlogV1Application using Java 14.0.1 on MSI with PID 4060 (E:\java_project\SpringBoot\blog_v1\target\classes started by MSI-PC in E:\java_project\SpringBoot\blog_v1)
+2021-03-11 21:51:46.675 [ restartedMain ] - [ DEBUG ] [ com.whut.blog.BlogV1Application : 56 ] - Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-03-11 21:51:46.676 [ restartedMain ] - [ INFO  ] [ com.whut.blog.BlogV1Application : 664 ] - The following profiles are active: pro
+2021-03-11 21:51:47.134 [ restartedMain ] - [ WARN  ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 44 ] - No MyBatis mapper was found in '[com.whut.blog]' package. Please check your configuration.
+2021-03-11 21:51:48.951 [ restartedMain ] - [ INFO  ] [ com.whut.blog.BlogV1Application : 61 ] - Started BlogV1Application in 2.304 seconds (JVM running for 160.789)
+2021-03-11 21:52:20.273 [ restartedMain ] - [ INFO  ] [ com.whut.blog.BlogV1Application : 55 ] - Starting BlogV1Application using Java 14.0.1 on MSI with PID 12896 (E:\java_project\SpringBoot\blog_v1\target\classes started by MSI-PC in E:\java_project\SpringBoot\blog_v1)
+2021-03-11 21:52:20.276 [ restartedMain ] - [ DEBUG ] [ com.whut.blog.BlogV1Application : 56 ] - Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-03-11 21:52:20.276 [ restartedMain ] - [ INFO  ] [ com.whut.blog.BlogV1Application : 664 ] - The following profiles are active: pro
+2021-03-11 21:52:21.096 [ restartedMain ] - [ WARN  ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 44 ] - No MyBatis mapper was found in '[com.whut.blog]' package. Please check your configuration.
+2021-03-11 21:52:24.892 [ restartedMain ] - [ INFO  ] [ com.whut.blog.BlogV1Application : 61 ] - Started BlogV1Application in 5.136 seconds (JVM running for 6.21)
+2021-03-11 21:52:34.993 [ restartedMain ] - [ INFO  ] [ com.whut.blog.BlogV1Application : 55 ] - Starting BlogV1Application using Java 14.0.1 on MSI with PID 12896 (E:\java_project\SpringBoot\blog_v1\target\classes started by MSI-PC in E:\java_project\SpringBoot\blog_v1)
+2021-03-11 21:52:34.994 [ restartedMain ] - [ DEBUG ] [ com.whut.blog.BlogV1Application : 56 ] - Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-03-11 21:52:34.994 [ restartedMain ] - [ INFO  ] [ com.whut.blog.BlogV1Application : 664 ] - The following profiles are active: pro
+2021-03-11 21:52:35.836 [ restartedMain ] - [ WARN  ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 44 ] - No MyBatis mapper was found in '[com.whut.blog]' package. Please check your configuration.
+2021-03-11 21:52:38.296 [ restartedMain ] - [ INFO  ] [ com.whut.blog.BlogV1Application : 61 ] - Started BlogV1Application in 3.409 seconds (JVM running for 19.614)
+2021-03-11 22:10:32.173 [ main ] - [ INFO  ] [ com.whut.blog.BlogV1ApplicationTests : 55 ] - Starting BlogV1ApplicationTests using Java 14.0.1 on MSI with PID 10028 (started by MSI-PC in E:\java_project\SpringBoot\blog_v1)
+2021-03-11 22:10:32.175 [ main ] - [ DEBUG ] [ com.whut.blog.BlogV1ApplicationTests : 56 ] - Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-03-11 22:10:32.175 [ main ] - [ INFO  ] [ com.whut.blog.BlogV1ApplicationTests : 664 ] - The following profiles are active: pro
+2021-03-11 22:10:33.438 [ main ] - [ WARN  ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 44 ] - No MyBatis mapper was found in '[com.whut.blog]' package. Please check your configuration.
+2021-03-11 22:10:39.686 [ main ] - [ INFO  ] [ com.whut.blog.BlogV1ApplicationTests : 61 ] - Started BlogV1ApplicationTests in 7.935 seconds (JVM running for 9.509)

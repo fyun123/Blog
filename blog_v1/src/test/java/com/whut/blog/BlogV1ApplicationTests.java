@@ -9,7 +9,7 @@ class BlogV1ApplicationTests {
 
     @Test
     void contextLoads() {
-        String zyq123 = MD5Utils.md5("zyq123");
+        String zyq123 = MD5Utils.md5("admin");
         System.out.println(zyq123);
     }
 

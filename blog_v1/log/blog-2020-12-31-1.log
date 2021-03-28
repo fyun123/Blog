@@ -1,0 +1,3 @@
+2020-12-31 18:07:42.658 [ restartedMain ] - [ INFO  ] [ com.whut.blog.BlogV1Application : 55 ] - Starting BlogV1Application using Java 14.0.1 on MSI with PID 12244 (E:\java_project\SpringBoot\blog_v1\target\classes started by MSI-PC in E:\java_project\SpringBoot\blog_v1)
+2020-12-31 18:07:42.664 [ restartedMain ] - [ DEBUG ] [ com.whut.blog.BlogV1Application : 56 ] - Running with Spring Boot v2.4.1, Spring v5.3.2
+2020-12-31 18:07:42.664 [ restartedMain ] - [ INFO  ] [ com.whut.blog.BlogV1Application : 664 ] - The following profiles are active: pro
